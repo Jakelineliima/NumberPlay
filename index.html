@@ -21,21 +21,26 @@
 <body>
 
   <header>
-    <a href="#">
-      <h3>NumberPlay seja bem vindo</h3>
-    </a>
+
+    <p>NumberPlay seja bem vindo</p>
+
   </header>
 
   <main class="container">
+    <div>
+      <h3 class="h3status" id="statusnumber">Advinhe o numero sorteado!</h3>
+      <h3 id="result"></h3>
+    </div>
+
+
     <form id="form">
       <label for="kick">Digite um número de (0 á 20) </label>
       <input type="number" id="kick" max="20" placeholder="0">
-      <button type="submit">Jogar!!!</button>
+      <button type="submit"><strong>Jogar</strong></button>
     </form>
 
-    <section class="result-bom" id="result">
-      <h3 id="statusnumber">Advinhe o numero sorteado!</h3>
-      <span id="attempt"> Tentativas:  0</span>
+    <section class="result-bom" >
+      <strong id="attempt">Tentativas: 0</strong> 
     </section>
     <button id="btnRestart" onclick="restart()">Jogar denovo</button>
   </main>

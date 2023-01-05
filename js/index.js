@@ -33,16 +33,19 @@ function handleSubmit(e) {
     statusnumber.innerHTML = "Parabéns Você acertou!";
     result.style.transition = "0.4s";
     result.style.backgroundColor = "#37c978";
-    result.style.color = "#fff";
-    statusnumber.style.color = "#fff";
+    result.style.color = "#663399";
+    statusnumber.style.color = "#663399";
+    statusnumber.style.textDecoration = "underline";
     clear();
   } else if (numberDrawn > kick) {
     statusnumber.innerHTML = "O número é maior";
-    statusnumber.style.color = "#de4251";
+    statusnumber.style.color = "rgb(205 48 48)";
+    statusnumber.style.textDecoration = "underline"
     clear();
   } else if (numberDrawn < kick) {
     statusnumber.innerHTML = "O número é menor";
-    statusnumber.style.color = "#de4251";
+    statusnumber.style.color = "rgb(205 48 48)";
+    statusnumber.style.textDecoration = "underline";
     clear();
   }
 }

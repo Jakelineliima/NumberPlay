@@ -2,15 +2,15 @@
 
 :root {
   --white: #fafafa;
-  --blue: #0A2146;
-  --blue-light: #80a3db;
+  --blue: #0a2146;
+  --roxo: #663399;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
 
@@ -25,19 +25,17 @@ header {
   text-align: center;
   padding: 2rem;
   box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0, 0.5);
-  background-color: var(--white);
+  background-color: var(--roxo);
 }
 
-header a h3 {
-  color: var(--blue);
-
+header p {
+  color: var(--white);
 }
 
 /* ===== Container ===== */
 
 .container {
   width: 100%;
-  height: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,11 +46,10 @@ header a h3 {
 /* ===== Form =====  */
 
 .container form {
-  background: var(--blue-light);
+  background: var(--roxo);
   display: flex;
   flex-direction: column;
   width: 49%;
-  margin-top: 30%;
   border-radius: 0.5rem;
   text-align: center;
   align-items: center;
@@ -65,6 +62,7 @@ header a h3 {
 }
 
 .container form input {
+  text-align: center;
   border: 0;
   outline: 0;
   margin: 5%;
@@ -80,15 +78,15 @@ header a h3 {
 
 .container form button {
   cursor: pointer;
-  margin: 5%;
+  margin: 9%;
   border: 0;
   outline: 0;
   padding: 0.8rem;
-  background: var(--blue);
+  background: var(--white);
   transition: 0.3s ease-in-out;
-  width: 80%;
+  width: 120px;
   border-radius: 20px;
-  color: #fff;
+  color: #000000;
 }
 
 .container form button:hover {
@@ -103,11 +101,12 @@ header a h3 {
   border: 0;
   outline: 0;
   padding: 0.8rem;
-  background: var(--blue);
+  background: var(--roxo);
   transition: 0.3s ease-in-out;
-  width: 20%;
+  width: 10%;
   border-radius: 20px;
   color: #fff;
+  justify-content: center;
 }
 
 .container .result-bom {
@@ -138,4 +137,16 @@ footer {
   color: var(--blue);
   margin-top: 40%;
   font-size: 20px;
+}
+
+.h3status {
+  color: var(--roxo);
+  margin: 74px auto;
+}
+
+
+#attempt{
+  color: var(--roxo);
+  display: flex;
+  justify-content: center;
 }
