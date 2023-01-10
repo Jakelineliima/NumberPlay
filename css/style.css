@@ -9,13 +9,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
-}
-
-form {
-  max-width: 378px;
 }
 
 /* ===== Header ===== */
@@ -23,8 +18,10 @@ form {
 header {
   width: 100%;
   text-align: center;
-  padding: 2rem;
-  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0, 0.5);
+  height: 116px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--roxo);
 }
 
@@ -35,12 +32,7 @@ header p {
 /* ===== Container ===== */
 
 .container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to rigth, #ddd, #eee, #ddd);
+  text-align: center;
 }
 
 /* ===== Form =====  */
@@ -49,7 +41,7 @@ header p {
   background: var(--roxo);
   display: flex;
   flex-direction: column;
-  width: 49%;
+  width: 428px;
   border-radius: 0.5rem;
   text-align: center;
   align-items: center;
@@ -103,7 +95,6 @@ header p {
   padding: 0.8rem;
   background: var(--roxo);
   transition: 0.3s ease-in-out;
-  width: 10%;
   border-radius: 20px;
   color: #fff;
   justify-content: center;
@@ -111,9 +102,19 @@ header p {
 
 .container .result-bom {
   margin: 27px;
-  padding: 30px;
+  height: 70px;
   border-radius: 5px;
   background: rgba(177, 175, 175, 0.295);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ===== Section ===== */
@@ -131,12 +132,15 @@ section h3 {
 footer {
   width: 100%;
   text-align: center;
-  padding: 2rem;
   box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0, 0.5);
-  background-color: var(--white);
-  color: var(--blue);
-  margin-top: 40%;
+  background-color: var(--roxo);
+  color: var(--white);
+  margin-top: 7%;
   font-size: 20px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .h3status {
@@ -144,9 +148,14 @@ footer {
   margin: 74px auto;
 }
 
-
-#attempt{
+#attempt {
   color: var(--roxo);
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  /* .forms {
+    align-items: flex-end;
+  } */
 }
